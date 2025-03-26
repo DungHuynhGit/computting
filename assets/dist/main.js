@@ -2978,13 +2978,13 @@ var RSS = {
   "Quảng Ngãi": "https://xskt.com.vn/rss-feed/quang-ngai-xsqng.rss",
   "Miền Trung": "https://xskt.com.vn/rss-feed/mien-trung-xsmt.rss",
   "Miền Bắc": "https://xskt.com.vn/rss-feed/mien-bac-xsmb.rss",
-  "Miền Bắc - Thứ 2": "https://xoso666.top/rss/xsmb-thu-2.rss",
-  "Miền Bắc - Thứ 3": "https://xoso666.top/rss/xsmb-thu-3.rss",
-  "Miền Bắc - Thứ 4": "https://xoso666.top/rss/xsmb-thu-4.rss",
-  "Miền Bắc - Thứ 5": "https://xoso666.top/rss/xsmb-thu-5.rss",
-  "Miền Bắc - Thứ 6": "https://xoso666.top/rss/xsmb-thu-6.rss",
-  "Miền Bắc - Thứ 7": "https://xoso666.top/rss/xsmb-thu-7.rss",
-  "Miền Bắc - Chủ nhật": "https://xoso666.top/rss/xsmb-chu-nhat.rss"
+  "Miền Bắc - Thứ 2": "https://xosodaiphat.com/ha-noi-td.rss",
+  "Miền Bắc - Thứ 3": "https://xosodaiphat.com/quang-ninh-qn.rss",
+  "Miền Bắc - Thứ 4": "https://xosodaiphat.com/bac-ninh-bn.rss",
+  "Miền Bắc - Thứ 5": "https://xosodaiphat.com/ha-noi-td.rss",
+  "Miền Bắc - Thứ 6": "https://xosodaiphat.com/hai-phong-hp.rss",
+  "Miền Bắc - Thứ 7": "https://xosodaiphat.com/nam-dinh-nd.rss",
+  "Miền Bắc - Chủ nhật": "https://xosodaiphat.com/thai-binh-tb.rss"
 }; //
 //
 //
