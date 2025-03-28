@@ -113,6 +113,9 @@ export default {
       }[data.selectedAlgorithm](this.numberFilteredByDate);
 
       this.checker.perform();
+      // Gọi phương thức mới kiểm tra cặp số duy nhất
+      this.uniquePairs = this.checker.checkUniquePairs();
+      console.log("Cặp số xuất hiện duy nhất:", this.uniquePairs);
     },
   },
 };

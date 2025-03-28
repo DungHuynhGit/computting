@@ -13,6 +13,7 @@ export default class NumberChecker {
     // Kiểm tra dãy số theo mỗi ngày
     this.checkNumArray();
     this.checkRange();
+    this.checkUniquePairs();
 
     // console.log(this.top10Result());
 
@@ -98,4 +99,22 @@ export default class NumberChecker {
       this.rangeResult[targetNum] = (this.rangeResult[targetNum] || 0) + 1;
     });
   }
+
+  checkUniquePairs() {
+    let uniquePairs = {};
+
+    // Duyệt qua danh sách các cặp số trong this.result
+    _.forEach(this.result, (count, pair) => {
+      if (count === 1) {
+        uniquePairs[pair] = count;
+      }
+    });
+
+    // Chuyển uniquePairs thành danh sách, sắp xếp và lấy top 10
+    let sortedUniquePairs = _.sortBy(_.toPairs(uniquePairs), i => -i[1]).slice(0, 10);
+
+    console.log("Top 10 cặp số xuất hiện duy nhất:", sortedUniquePairs);
+    return sortedUniquePairs;
+  }
+
 }

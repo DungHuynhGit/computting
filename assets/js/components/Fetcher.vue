@@ -65,6 +65,7 @@ export default {
       algorithms: [
         ["pair", "Cặp đôi hoàn hảo"],
         ["separation", "Đôi ngã chia ly (không đi chung)"],
+        ["uniquePairs", "Cặp số duy nhất"], // Thêm mới
       ],
       selectedAlgorithm: "separation",
     };
@@ -89,12 +90,31 @@ export default {
         rss: RSS[this.rss],
       });
     },
+    // onCheck() {
+    //   this.$emit("onCheck", {
+    //     selectedDate: this.selectedDateArray,
+    //     selectedAlgorithm: this.selectedAlgorithm,
+    //     uniquePairs: uniquePairs,
+    //   });
+    // },
     onCheck() {
+      let result = null;
+
+      if (this.selectedAlgorithm === "pair") {
+        result = this.checkNumArray();
+      } else if (this.selectedAlgorithm === "separation") {
+        result = this.checkRange();
+      } else if (this.selectedAlgorithm === "uniquePairs") {
+        result = this.checkUniquePairs();
+      }
+
       this.$emit("onCheck", {
         selectedDate: this.selectedDateArray,
         selectedAlgorithm: this.selectedAlgorithm,
+        result: result, // Gửi kết quả về component cha
       });
-    },
+    }
+
   },
   watch: {
     rss(val) {
