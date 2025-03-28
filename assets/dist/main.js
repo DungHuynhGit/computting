@@ -2666,7 +2666,8 @@ var RssParser = function () {
     value: function perform() {
       var _this = this;
 
-      var CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+      // var CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+       var CORS_PROXY = "https://api.allorigins.win/raw?url="
 
       return new _promise2.default(function (rs, rj) {
         CommonJs.toggleLoadingWrapper(true);
